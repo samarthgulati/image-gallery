@@ -1,0 +1,80 @@
+#root {
+  display: grid;
+  --size: 30vw;
+  grid-template-columns: repeat(auto-fill, minmax(var(--size), 1fr));
+  gap: 2rem;
+  padding: 0.5rem;
+  justify-items: center;
+}
+
+figure {
+  width: var(--size);
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: var(--size) min-content;
+}
+
+figure > img {
+  grid-area: 1 / 1 / 2 / 3;
+  width: var(--size);
+  height: var(--size);
+  object-fit: contain;
+}
+
+figure > button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-family: monospace;
+  color: var(--fontColor);
+}
+
+figure {
+  color: black;
+}
+
+figure.up > button.up {
+  --fontColor: #1B5E20;
+}
+
+figure.down > button.down {
+  --fontColor: #B71C1C;
+}
+
+figure > button:hover {
+  background: #fafafa;
+  border-radius: 0.25rem;
+}
+
+figure > button > img {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+figure > button > img.voted {
+  display: none;
+}
+
+figure.up > button > img.voted.up {
+  display: initial;
+}
+
+figure.up > button > img.vote.up {
+  display: none;
+}
+
+figure.down > button > img.voted.down {
+  display: initial;
+}
+
+figure.down > button > img.vote.down {
+  display: none;
+}
