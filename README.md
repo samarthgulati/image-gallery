@@ -9,7 +9,10 @@ Docker setup and DB configuration were referred from (mern-crud)[https://github.
 The front-end is not yet wired to the back-end, and reads a list of images from a static json file.
 It can be run independently by running `npm install` in the client folder, followed by `npm run start`
 This should load up the interface on `http://localhost:4200`
-<img width="1014" alt="Screenshot" src="https://github.com/samarthgulati/image-gallery/assets/8597017/71fa4b2a-cd0a-4a7e-9b4e-18dce4457420">
+
+![ImageGalleryVoting](https://github.com/samarthgulati/image-gallery/assets/8597017/3829c74c-ff55-4dae-9d7a-8ab4182f63b2)
+
+
 Each of the buttons show the current count of votes for each type, and user's current selection with a color change.
 User can also unset their vote by clicking on their selection again.
 
