@@ -4,7 +4,7 @@ A simple one page web app that displays a list of images with buttons to vote up
 The front-end uses create-react-app for initial boilerplate code.
 The back-end uses Node server through Express, and MongoDB through Mongoose. 
 
-Docker setup and DB configuration were referred from (mern-crud)[https://github.com/cefjoeii/mern-crud] repository.
+Docker setup and DB configuration were referred from [mern-crud](https://github.com/cefjoeii/mern-crud) repository.
 
 The front-end is not yet wired to the back-end, and reads a list of images from a static json file.
 It can be run independently by running `npm install` in the client folder, followed by `npm run start`
